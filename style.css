@@ -1,0 +1,130 @@
+body {
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-color: rgba(133, 133, 133, 0.904);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 15px;
+}
+p,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(244, 244, 244, 0.5);
+  border-radius: 6px;
+  transition: background-color ease-in-out 0.2s;
+}
+.notification {
+  background-color: rgb(0, 0, 0, 0);
+}
+.nobgtext {
+  background-color: rgb(0, 0, 0, 0);
+}
+button:hover {
+  background-color: rgb(125, 125, 125);
+}
+.topbar {
+  display: flex;
+  background-color: rgb(25, 152, 255);
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 16px;
+  align-self: center;
+  height: fit-content;
+  align-items: center;
+}
+.notifications {
+  display: flex;
+  background-color: rgb(36, 124, 200);
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 12px;
+}
+.notification {
+  background-color: rgba(0, 0, 0, 0);
+}
+.playbutton {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 64px;
+  background-color: green;
+  width: 200px;
+  align-self: center;
+  border-radius: 16px;
+  border-color: white;
+}
+.playbutton1 {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  color: white;
+  font-size: 24px;
+  background-color: green;
+}
+.playbutton:hover,
+.playbutton1:hover {
+  background-color: darkgreen;
+}
+.otherGameModes {
+  align-self: center;
+}
+.answergrid {
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: 30vh 30vh;
+  align-self: center;
+  gap: 30px;
+  justify-self: center;
+  display:none;
+}
+.ans {
+  background-color: rgb(20, 20, 20);
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+}
+.anst {
+  color: white;
+  font-size: 36px;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+}
+.winDiv {
+  position: absolute;
+  display: none;
+  position-area: center center;
+  top: 65%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  width: 650px;
+  height: 500px;
+  background-color: rgb(145, 145, 0);
+  border-radius: 16px;
+  border-style: solid;
+  overflow-y: auto;
+} 
+.errorMSG {
+  color: red;
+  display: none;
+}
+.allAnswers {
+  background-color: rgba(170, 170, 170, 1);
+  border-radius: 16px;
+  gap: 15px;
+  margin: 25px;
+}
